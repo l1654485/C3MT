@@ -22,6 +22,13 @@ Synapse. Following [DHC](https://github.com/xmed-lab/DHC), 20 samples were split
 **Dataset III**
 LA. We use the code and preprocessed data by [BCP](https://github.com/DeepMed-Lab-ECNU/BCP). 
 
+Download the pre-processed data and put the data in `../data/ACDC` or `../data/Synapse2D` or `../data/LA`. In this project, we use ACDC, Synapse and LA for 2D purpose. You can download the dataset with the list of labeled training, unlabeled training, validation, and testing slices as following:
+
+ACDC from [Baidu Netdisk Link](https://pan.baidu.com/s/1hON-8sEC31LQ8m2S2KF9Ag) with passcode: 'nwgn'.
+
+Synapse from [Baidu Netdisk Link](https://pan.baidu.com/s/1Zgfj_UzGLMJVvoGWbiW5QQ) with passcode: 'yxdv'.
+
+LA from [Baidu Netdisk Link](https://pan.baidu.com/s/10lCcwUtoEey_5t5P-X2fOQ) with passcode: 'x28k'.
 # Running
 ```
 cd code
