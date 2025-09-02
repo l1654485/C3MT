@@ -56,7 +56,7 @@ parser.add_argument('--exp', type=str,
 parser.add_argument('--model', type=str,
                     default='vit', help='model_name')
 parser.add_argument('--max_iterations', type=int,
-                    default=30000, help='maximum iteration number to train')
+                    default=50000, help='maximum iteration number to train')
 parser.add_argument('--batch_size', type=int, default=24,
                     help='batch_size per gpu')
 parser.add_argument('--deterministic', type=int, default=1,
