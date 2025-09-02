@@ -20,7 +20,7 @@ ACDC. We use the code and preprocessed data by [CV-SSL-MIS](https://github.com/z
 Synapse. Following [DHC](https://github.com/xmed-lab/DHC), 20 samples were split for training, 4 samples for validation, and 6 samples for testing. We use the processed data by [MagicNet](https://github.com/DeepMed-Lab-ECNU/MagicNet).
 
 **Dataset III**
-LA. We use the code and preprocessed data by [BCP](https:github.com/DeepMed-Lab-ECNU/BCP). 
+LA. We use the code and preprocessed data by [BCP](https://github.com/DeepMed-Lab-ECNU/BCP). 
 
 # Running
 ```
