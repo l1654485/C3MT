@@ -15,7 +15,6 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
 from tensorboardX import SummaryWriter
-from torch.nn import BCEWithLogitsLoss
 from torch.nn.modules.loss import CrossEntropyLoss
 from torch.utils.data import DataLoader
 from torchvision import transforms
@@ -29,16 +28,13 @@ from dataloaders import utils
 from dataloaders.dataset import (
     BaseDataSets,
     CTATransform,
-    RandomGenerator,
     TwoStreamBatchSampler,
-    WeakStrongAugment,
-    RandomGenerator_w,
 )
 
 from networks.vision_transformer import SwinUnet as ViT_seg
 from networks.net_factory import net_factory
 from utils import losses, metrics, ramps, util
-from val_2D import test_single_volume, show_single_volume
+from val_2D import test_single_volume
 
 import re
 from xml.etree.ElementInclude import default_loader
@@ -134,7 +130,7 @@ def patients_to_slices(dataset, patiens_num):
     if "ACDC" in dataset:
         ref_dict = {"3": 68, "7": 136,
                     "14": 256, "21": 396, "28": 512, "35": 664, "130": 1132, "126": 1058, "140": 1312}
-    elif "Synapse2D1" in dataset:
+    elif "Synapse2D" in dataset:
         ref_dict = {"2": 238, "4": 478}  # classnum = 14
     elif "LA" in dataset:
         ref_dict = {"8": 462,"16":942,"4":224}
