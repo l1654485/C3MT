@@ -32,7 +32,7 @@ LA from [Baidu Netdisk Link](https://pan.baidu.com/s/10lCcwUtoEey_5t5P-X2fOQ) wi
 # Running
 ```
 cd code
-CUDA_VISIBLE_DEVICES=0 python C3MT.py --root_path ../data/ACDC --exp ACDC/C3MT --max_iterations 50000 --batch_size 16 --labeled_bs 8 --base_lr 0.01 --num_classes 4 --labeled_num 14
+CUDA_VISIBLE_DEVICES=0 python C3MT.py --root_path ../data/ACDC --exp ACDC/C3MT --max_iterations 40000 --batch_size 16 --labeled_bs 8 --base_lr 0.01 --num_classes 4 --labeled_num 14
 ```
 
 ## Reference
